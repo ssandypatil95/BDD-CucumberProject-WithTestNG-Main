@@ -3,12 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="runTimeRetryfailedTc.Test001">
+      <class name="day24.webpagescripts.OrangeHRMLoginScript">
         <methods>
-          <include name="Test1"/>
-          <include name="Test2"/>
+          <include name="loginIntoOrangeHRMApp"/>
         </methods>
-      </class> <!-- runTimeRetryfailedTc.Test001 -->
+      </class> <!-- day24.webpagescripts.OrangeHRMLoginScript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

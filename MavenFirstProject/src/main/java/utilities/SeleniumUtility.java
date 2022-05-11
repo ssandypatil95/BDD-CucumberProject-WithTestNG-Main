@@ -8,7 +8,6 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
-
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -72,6 +71,10 @@ public class SeleniumUtility {
 		waitForElementDisplayed(element);
 		element.clear();
 		element.sendKeys(input);
+	}
+	
+	public WebElement getActiveElement() {
+		return driver.switchTo().activeElement();
 	}
 
 	public void clickOnElement(WebElement element) {

@@ -10,18 +10,12 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.SeleniumUtility;
 
 public class GoogleSearchPage extends SeleniumUtility{
-
-	WebDriver driver;
-	public GoogleSearchPage(WebDriver driver) {
-		this.driver=driver;
-		PageFactory.initElements(driver, this);
-	}
 	
 	@FindBy(name="q")
 	private WebElement searchInputField;
 
 	public void searchText(String text) {
 		typeInput(searchInputField, text);
-		driver.switchTo().activeElement().sendKeys(Keys.ENTER);
+		getActiveElement().sendKeys(Keys.ENTER);
 	}
 }

@@ -37,6 +37,7 @@ public class ExtentDemo extends SeleniumUtility{
 			test.log(LogStatus.FAIL,test.addScreenCapture(screenShot(driver)), "Google page validation got failed");
 			//System.out.println("Google page validation got failed");
 		}
+		cleanUp();
 	}
 	@AfterClass
 	public static void endTest() {

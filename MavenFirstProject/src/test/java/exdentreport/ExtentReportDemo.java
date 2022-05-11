@@ -17,11 +17,8 @@ import com.relevantcodes.extentreports.LogStatus;
 public class ExtentReportDemo{
 	ExtentReports report;
 	ExtentTest test;
-	
-	
 	@BeforeTest
 	public void startReport(){
-		
 		report = new ExtentReports ("./ExtentReport/ExtentReport.html", true);
 		//extent.addSystemInfo("Environment","Environment Name")
 		report
@@ -36,8 +33,8 @@ public class ExtentReportDemo{
 	@Test
 	public void testCase1(){
 		//extent.startTest("TestCaseName", "Description")
-		//TestCaseName – Name of the test
-		//Description – Description of the test
+		//TestCaseName ï¿½ Name of the test
+		//Description ï¿½ Description of the test
 		//Starting test
 		test = report.startTest("passTest");
 		Assert.assertTrue(true);
@@ -49,7 +46,7 @@ public class ExtentReportDemo{
 	public void testCase2(){
 		test = report.startTest("failTest");
 		Assert.assertTrue(false);
-		test.log(LogStatus.PASS, "TestCase2 is passed");
+		test.log(LogStatus.FAIL, "TestCase2 is failed");
 	}
 	
 	@Test
