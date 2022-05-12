@@ -12,7 +12,7 @@ public class Example_Param6 {
 	public void checkNotification() {
 		System.out.println("Hello, I am checkNotification from Example_Param1 class");
 		try {
-			Thread.sleep(2500);
+			Thread.sleep(500);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

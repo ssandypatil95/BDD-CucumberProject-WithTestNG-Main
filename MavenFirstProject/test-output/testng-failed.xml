@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day24.webpagescripts.OrangeHRMLoginScript">
+      <class name="actitime.pagescripts.TestTaskFunctionality">
         <methods>
-          <include name="loginIntoOrangeHRMApp"/>
+          <include name="testCreateTask"/>
+          <include name="test_end"/>
+          <include name="test_start"/>
         </methods>
-      </class> <!-- day24.webpagescripts.OrangeHRMLoginScript -->
+      </class> <!-- actitime.pagescripts.TestTaskFunctionality -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
